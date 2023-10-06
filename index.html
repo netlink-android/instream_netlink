@@ -21,19 +21,41 @@
     <!-- <link rel="stylesheet" href="node_modules/video.js/dist/video-js.min.css"> -->
     <!-- <link rel="stylesheet" href="node_modules/videojs-contrib-ads/dist/videojs.ads.css" /> -->
     <!-- <link rel="stylesheet" href="dist/videojs.ima.css" /> -->
-    
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/node_modules/video.js/dist/video-js.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/node_modules/videojs-contrib-ads/dist/videojs.ads.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/dist/videojs.ima.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/node_modules/video.js/dist/video-js.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/node_modules/videojs-contrib-ads/dist/videojs.ads.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/dist/videojs.ima.css"
+    />
   </head>
   <body>
-    <video id="content_video" class="video-js vjs-default-skin"
-        controls preload="auto" width="640"
-        height="360" playsinline>
-      <source src="video_netlink.mp4" ></source>
-    </video>
+    <!-- <div style="height: 5000px; width: 100px; color: aqua"></div> -->
+
+      <video
+        id="content_video"
+        class="video-js vjs-default-skin"
+        controls
+        preload="auto"
+        width="640"
+        height="480"
+        playsinline
+      >
+        <source src="video_netlink.mp4" type="video/mp4" />
+      </video>
+     
+
+
     <!-- <iframe width="640" height="360" src="https://short.ink/0kGf9j4bj" frameborder="0" scrolling="0" allowfullscreen></iframe> -->
     <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/node_modules/video.js/dist/video.min.js"></script>
@@ -41,6 +63,12 @@
     <script src="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/dist/videojs.ima.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/node_modules/can-autoplay/build/can-autoplay.min.js"></script>
 
-    <script src="ads.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/netlink-android/instream_netlink@master/ads.js"></script>
+    <script>
+      window.onload = function () {
+        var application = null;
+        application = new Application();
+      };
+    </script>
   </body>
 </html>
