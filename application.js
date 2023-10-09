@@ -10,13 +10,14 @@ var Application = function (src_video) {
   getVideoDuration(src_video)
     .then(function (duration) {
       if (duration <= 5) {
-        duration_ad = 5000;
+        adTagAdsense =
+          "https://googleads.g.doubleclick.net/pagead/ads?ad_type=video_image&client=ca-video-pub-3166493188367342&description_url=http%3A%2F%2Fwww.tinmoi.vn&videoad_start_delay=0&hl=en&max_ad_duration=5000&sdmax=30000";
       } else if (duration <= 15) {
-        duration_ad = 15000;
-      } else if (duration <= 30) {
-        duration_ad = 30000;
+        adTagAdsense =
+          "https://googleads.g.doubleclick.net/pagead/ads?ad_type=video_image&client=ca-video-pub-3166493188367342&description_url=http%3A%2F%2Fwww.tinmoi.vn&videoad_start_delay=0&hl=en&max_ad_duration=15000&sdmax=30000";
       } else {
-        duration_ad = 30000;
+        adTagAdsense =
+          "https://googleads.g.doubleclick.net/pagead/ads?ad_type=video_image&client=ca-video-pub-3166493188367342&description_url=http%3A%2F%2Fwww.tinmoi.vn&videoad_start_delay=0&hl=en&max_ad_duration=30000&sdmax=30000";
       }
     })
     .catch(function (error) {
